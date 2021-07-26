@@ -27,7 +27,7 @@ function Header() {
           <li>
             <Link
               className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
+              activeClassName={headerStyles.activeNavItems}
               to="/"
             >
               Home
@@ -36,25 +36,25 @@ function Header() {
           <li>
             <Link
               className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
+              activeClassName={headerStyles.activeNavItems}
               to="/blog"
             >
               Blog
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
+              activeClassName={headerStyles.activeNavItems}
               to="/about"
             >
               About Us
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
+              activeClassName={headerStyles.activeNavItems}
               to="/contact"
             >
               Contact
@@ -63,7 +63,7 @@ function Header() {
           <li>
             <Link
               className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
+              activeClassName={headerStyles.activeNavItems}
               to="/xray"
             >
               X-Ray Search
@@ -71,6 +71,8 @@ function Header() {
           </li>
         </ul>
       </nav>
+      <hr />
+
     </header>
   )
 }

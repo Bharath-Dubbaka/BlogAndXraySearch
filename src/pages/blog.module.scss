@@ -1,31 +1,79 @@
 .posts {
-    list-style-type:none;
-    margin: 0;
-    padding: 0;
-    
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .post {
-    margin: 1rem 0;
+  margin: 1rem 0;
 
-    a {
-        background: #f4f4f4;
-        color: #000000;
-        display: block;
-        padding: 1rem;
-        text-decoration: none;
-    }
+  a {
+    background: #f4f4f4;
+    color: #000000;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    border: 1px solid #D0D0D0;
+    border-radius: 1em;
+  }
 
-    a:hover {
-        background: #e4e4e4;
-    }
+  a:hover {
+    background: #D0D0D0;
+  }
 
-    h2 {
-        margin-bottom: 0
-    }
-    p {
-        color: #777777;
-        font-size: 0.9rem;
-        font-style: italic;
-    }
+  h2 {
+    margin-bottom: 0;
+  }
+  p {
+    color: #777777;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+}
+
+
+// xray page
+.xrayInputDiv {
+  margin-left: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.xrayInputDiv input {
+    height: 2.5em;
+    // background-color: #f4f4f4;
+    margin-right: 0.3em;
+    width: 70%;
+    border: 1px solid black;
+    border-radius: 1em;
+
+  }
+
+  .xrayInputDiv button {
+    height: 3em;
+    background-color: #000000;
+    // margin-right: 1em;
+    width: 25%;
+    border: 1px solid black;
+    border-radius: 1em;
+    color: white;
+
+
+  }
+  .xrayIntro {
+      justify-content: center;
+      display: flex;
+  }
+  .xrayOutRow {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+// Homepage
+.homeContainer {
+  text-align: center;
+}
+
+.contactContainer {
+  text-align: center;
 }
