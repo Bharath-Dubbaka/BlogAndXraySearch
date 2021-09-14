@@ -39,7 +39,7 @@ function Header() {
               activeClassName={headerStyles.activeNavItems}
               to="/blog"
             >
-              Blog
+              Blog Posts
             </Link>
           </li>
           {/* <li>
@@ -57,7 +57,7 @@ function Header() {
               activeClassName={headerStyles.activeNavItems}
               to="/contact"
             >
-              Contact
+              User Guide
             </Link>
           </li>
           <li>
@@ -69,10 +69,18 @@ function Header() {
               X-Ray Search
             </Link>
           </li>
+          <li>
+            <Link
+              className={headerStyles.navItem}
+              activeClassName={headerStyles.activeNavItems}
+              to="/about"
+            >
+              Privacy policy
+            </Link>
+          </li>
         </ul>
       </nav>
-      <hr />
-
+      <div className={headerStyles.hr} ></div>
     </header>
   )
 }

@@ -10,8 +10,9 @@ const Home = () => {
       <Layout>
         <Head title="Home" />
         <div className={blogStyles.homeContainer}>
-          <h1>Welcome</h1>
-          <p>Need a Developer/Recruitment Consultant ?</p>
+          <h1 className={blogStyles.title}>Welcome</h1>
+          <p className={blogStyles.title}>Need a Developer/Recruitment Consultant ?</p>
+          <p className={blogStyles.title}>Help us as we build next generation tools</p>
           <p>
             <Link to="/contact">Contact Us</Link>
           </p>

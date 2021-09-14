@@ -10,8 +10,8 @@ function ContactPage() {
       <Layout>
         <Head title="Contact" />
         <div className={blogStyles.contactContainer}>
-          <h1>Contact</h1>
-          <p>
+          <h1 className={blogStyles.title}>Contact</h1>
+          <p className={blogStyles.title}>
             Best way to reach us is at{" "}
             <Link
               target="blank"

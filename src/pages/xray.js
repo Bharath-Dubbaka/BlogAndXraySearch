@@ -25,17 +25,11 @@ function XrayPage() {
     <div>
       <Layout>
         <Head title="Xray-Search" />
-        <h1>Xray Search</h1>
+        {/* <h1>Xray Search</h1> */}
 
         <div className="main-div">
-          <div className="heading-div">
-            {/* <h2 className="title-div"> NinjaSourcing</h2> */}
-          </div>
-          <div className={blogStyles.xrayIntro}>
-            <h4>
-              A Platform Built with a view to help Recruiters search profiles on
-              Social Media Platforms with Ease !!!
-            </h4>
+          <div className={blogStyles.headingDiv}>
+            <h1> LinkedIn Xray Search Tool </h1>
           </div>
           <div className={blogStyles.xrayInputDiv}>
             <input

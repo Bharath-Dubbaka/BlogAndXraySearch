@@ -25,7 +25,7 @@ function BlogPage() {
     <div>
       <Layout>
       <Head title="Blog"/>
-        <h1>Blog</h1>
+        <h1 className={blogStyles.title}>BLOG</h1>
         <ol className={blogStyles.posts}>
           {data.allContentfulBlogPost.edges.map(edge => {
             return (
