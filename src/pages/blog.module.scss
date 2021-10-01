@@ -1,7 +1,7 @@
 .title {
   display: flex;
   justify-content: center;
-  color:#358da0
+  color: #358da0;
 }
 .posts {
   list-style-type: none;
@@ -18,13 +18,13 @@
     display: block;
     padding: 1rem;
     text-decoration: none;
-    border: 1px solid #D0D0D0;
+    border: 1px solid #d0d0d0;
     border-radius: 1em;
   }
 
   a:hover {
     background: #7f7eb3;
-    color:white
+    color: white;
   }
 
   h2 {
@@ -37,52 +37,85 @@
   }
 }
 
-
 // xray page
 .xrayInputDiv {
   margin-left: 1em;
   padding-top: 2em;
   padding-bottom: 2em;
+  display: flex;
+  justify-content: center;
 }
-.xrayInputDiv input {
-    height: 2.5em;
-    // background-color: #f4f4f4;
-    margin-right: 0.3em;
-    width: 70%;
-    border: 1px solid #7f7eb3;
-    border-radius: 0.3em;
-
-  }
-
-  .xrayInputDiv button {
-    height: 3em;
-    background-color: #232c4d;
-    // margin-right: 1em;
-    width: 25%;
-    border: 1px solid #7f7eb3;
-    border-radius: 0.3em;
-    color: #358da0;
-
-
-  }
-  .headingDiv {
-    display: flex;
-    justify-content: center;
-    h1 {
-      color:#358da0
-    }
-  }
-  .xrayIntro {
-      justify-content: center;
-      display: flex;
-  }
-  .xrayOutRow {
-    justify-content: center;
-    display: flex;
-    text-align: center;
-    color: #358da0;
+.xrayInputDivTwo {
+  margin-left: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  display: flex;
+  justify-content: center;
 }
 
+.xrayInputDivOne input {
+  height: 2.5em;
+  // background-color: #f4f4f4;
+  // margin-right: 0.3em;
+  width: 100%;
+  border: 1px solid #7f7eb3;
+  border-radius: 0.3em;
+}
+.xrayInputDivTwoInputOne {
+  height: 2.5em;
+  // background-color: #f4f4f4;
+  // margin-right: 0.3em;
+  width: 60%;
+  border: 1px solid #7f7eb3;
+  border-radius: 0.3em;
+  margin-right: 0.3em;
+}
+.xrayInputDivTwoInputTwo {
+  height: 2.5em;
+  // background-color: #f4f4f4;
+  // margin-right: 0.3em;
+  width: 40%;
+  border: 1px solid #7f7eb3;
+  border-radius: 0.3em;
+}
+.xraySubmitDiv {
+  display: flex;
+  justify-content: center;
+}
+.xraySubmitDiv button {
+  height: 3em;
+  background-color: #232c4d;
+  // margin-right: 1em;
+  width: 25%;
+  border: 1px solid #7f7eb3;
+  border-radius: 0.3em;
+  color: #358da0;
+}
+.headingDiv {
+  display: flex;
+  justify-content: center;
+  h1 {
+    color: #358da0;
+  }
+}
+.xrayIntro {
+  justify-content: center;
+  display: flex;
+}
+.xrayOutRowOne {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  color: #358da0;
+  margin-top: 10%;
+}
+.xrayOutRowTwo {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  color: #358da0;
+  // margin-top: 10%;
+}
 // Homepage
 .homeContainer {
   text-align: center;

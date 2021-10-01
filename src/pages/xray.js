@@ -5,6 +5,7 @@ import * as blogStyles from "./blog.module.scss"
 
 function XrayPage() {
   const [string, setString] = useState("")
+  const [location, setLocation] = useState("")
 
   const handleString = e => {
     // let preString = 'http://www.google.com/search?q=+';
@@ -12,13 +13,18 @@ function XrayPage() {
       ' -intitle:"profiles" -inurl:"dir/ " site:linkedin.com/in/ OR site:linkedin.com/pub/'
     setString(e.target.value + postString)
   }
+  const handleLocation = e => {
+    // let preString = 'http://www.google.com/search?q=+';
+    setLocation(e.target.value + " AND ")
+  }
   //   const handleClear = () => {
   //     setString("");
   //   };
-
+console.log(location);
+console.log(string);
   const onSubmit = () => {
     return string.length !== 0
-      ? window.open("http://www.google.com/search?q=+" + string)
+      ? window.open("http://www.google.com/search?q=+" + location + string )
       : alert("Please enter string")
   }
   return (
@@ -31,26 +37,44 @@ function XrayPage() {
           <div className={blogStyles.headingDiv}>
             <h1> LinkedIn Xray Search Tool </h1>
           </div>
-          <div className={blogStyles.xrayInputDiv}>
+          <div className={blogStyles.xrayInputDivOne}>
+            <p style={{  color: "#358da0"}}>ENTER TITLE AND SKILLS: </p>
             <input
               className="input-field"
               type="text"
               name="string"
-              placeholder='    eg: "React" AND (Javascript OR JS) AND San jose, CA'
+              placeholder='    eg: React AND ((Javascript OR JS) OR (ES6 OR "ES 6")) AND (Github OR "Github")' 
               onChange={handleString}
             />
-            <button onClick={onSubmit} className="search-btn">
-              SEARCH
-            </button>
+          </div>
+          <div className={blogStyles.xrayInputDivTwo}>
+            <div style={{color: "#358da0", marginTop:"0.6em", marginRight:"1em"}}> LOCATION: </div>
+            <input
+              className={blogStyles.xrayInputDivTwoInputOne}
+              type="text"
+              name="string"
+              placeholder="   eg: Houston, TX"
+              onChange={handleLocation}
+            />
+            {/* <input
+              className={blogStyles.xrayInputDivTwoInputTwo}
+              type="text"
+              name="string"
+              placeholder='    eg: "React" AND (Javascript OR JS) AND San jose, CA'
+              onChange={handleString}
+            /> */}
+          </div>
+          <div className={blogStyles.xraySubmitDiv}>
+            <button onClick={onSubmit}>SEARCH</button>
           </div>
           <div>
-            <p className={blogStyles.xrayOutRow}>
+            <p className={blogStyles.xrayOutRowOne}>
               This site is free for everyone to use, build with a vision to help
               recruiters and startup finding the potential/desired candidates
               for their organization,"PLEASE DO NOT EXPLOIT/MISUSE"
             </p>
             <br />
-            <p className={blogStyles.xrayOutRow}>
+            <p className={blogStyles.xrayOutRowTwo}>
               {/* but it still costs me money
             to host and maintain… Why don’t you #BeAwesome and help out by
             Donating. Lorem ipsum dolor, sit amet consectetur adipisicing elit. */}{" "}
