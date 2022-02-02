@@ -7,7 +7,7 @@ function AboutPage() {
   return (
     <div>
       <Layout>
-        <Head title="About" />
+        <Head title="About"  />
         <h1 className={blogStyles.title}>Privacy Policy</h1>
         <h3 className={blogStyles.title}>
           We don't store your personal details / We don't store your email

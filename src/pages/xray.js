@@ -73,7 +73,6 @@ console.log(string);
               recruiters and startup finding the potential/desired candidates
               for their organization,"PLEASE DO NOT EXPLOIT/MISUSE"
             </p>
-            <br />
             <p className={blogStyles.xrayOutRowTwo}>
               {/* but it still costs me money
             to host and maintain… Why don’t you #BeAwesome and help out by
