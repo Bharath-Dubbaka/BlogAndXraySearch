@@ -20,11 +20,11 @@ function XrayPage() {
   //   const handleClear = () => {
   //     setString("");
   //   };
-console.log(location);
-console.log(string);
+  console.log(location)
+  console.log(string)
   const onSubmit = () => {
     return string.length !== 0
-      ? window.open("http://www.google.com/search?q=+" + location + string )
+      ? window.open("http://www.google.com/search?q=+" + location + string)
       : alert("Please enter string")
   }
   return (
@@ -38,17 +38,26 @@ console.log(string);
             <h1> LinkedIn Xray Search Tool </h1>
           </div>
           <div className={blogStyles.xrayInputDivOne}>
-            <p style={{  color: "#358da0"}}>ENTER TITLE AND SKILLS: </p>
+            <p style={{ color: "#358da0" }}>ENTER TITLE AND SKILLS: </p>
             <input
               className="input-field"
               type="text"
               name="string"
-              placeholder='    eg: React AND ((Javascript OR JS) OR (ES6 OR "ES 6")) AND (Github OR "Github")' 
+              placeholder='    eg: React AND ((Javascript OR JS) OR (ES6 OR "ES 6")) AND (Github OR "Github")'
               onChange={handleString}
             />
           </div>
           <div className={blogStyles.xrayInputDivTwo}>
-            <div style={{color: "#358da0", marginTop:"0.6em", marginRight:"1em"}}> LOCATION: </div>
+            <div
+              style={{
+                color: "#358da0",
+                marginTop: "0.6em",
+                marginRight: "1em",
+              }}
+            >
+              {" "}
+              LOCATION:{" "}
+            </div>
             <input
               className={blogStyles.xrayInputDivTwoInputOne}
               type="text"
@@ -77,10 +86,10 @@ console.log(string);
               {/* but it still costs me money
             to host and maintain… Why don’t you #BeAwesome and help out by
             Donating. Lorem ipsum dolor, sit amet consectetur adipisicing elit. */}{" "}
-              Please go through the boolean guides available on google on how to
+              {/* Please go through the boolean guides available on google on how to
               source, if you are not familiar with syntax or concept. I am
               working on the page to make it more usable and productive by
-              adding new options and add-ons.
+              adding new options and add-ons. */}
             </p>
             <br />
             <br />
