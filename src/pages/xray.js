@@ -86,10 +86,10 @@ function XrayPage() {
               {/* but it still costs me money
             to host and maintain… Why don’t you #BeAwesome and help out by
             Donating. Lorem ipsum dolor, sit amet consectetur adipisicing elit. */}{" "}
-              {/* Please go through the boolean guides available on google on how to
+              Please go through the boolean guides available on google on how to
               source, if you are not familiar with syntax or concept. I am
               working on the page to make it more usable and productive by
-              adding new options and add-ons. */}
+              adding new options and add-ons.
             </p>
             <br />
             <br />
